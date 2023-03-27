@@ -61,3 +61,31 @@ export const useMyAwesomeHook = ({ title }: MyAwesomeHookProps) => {
 ### Exporting
 
 Export React hook with `export`, not with `export default`.
+
+## Functions
+
+### Name 
+
+Every function is written in camelCase.
+
+### Args
+
+Functions have args, not props. The args are named as `{FUNCTION_NAME}Args`, for example `MyAwesomeFunctionArgs`.
+
+```ts
+type MyAwesomeFunctionArgs = {
+  title: string
+}
+
+export const myAwesomeFunction = ({ title }: MyAwesomeFunctionArgs) => {
+  ...
+}
+```
+
+### Exporting
+
+Export function with `export`, not with `export default`.
+
+## File structure
+
+Every file should export only one function. There should not be file like `utils.ts` with many exports.

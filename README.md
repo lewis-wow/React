@@ -89,3 +89,29 @@ Export function with `export`, not with `export default`.
 ## File structure
 
 Every file should export only one function. There should not be file like `utils.ts` with many exports.
+
+## Classes
+
+## Name
+
+Every class name is written in PascalCase.
+
+### Args
+
+Classes have args, not props. The args are named as `{CLASS_NAME}Args`, for example `MyAwesomeClassArgs`.
+
+```ts
+type MyAwesomeClassArgs = {
+  title: string
+}
+
+export class MyAwesomeClass {
+  constructor(args: MyAwesomeClassArgs) {
+    ...
+  }
+}
+```
+
+### Exporting
+
+Export class with `export`, not with `export default`.

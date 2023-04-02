@@ -106,7 +106,7 @@ type MyAwesomeClassArgs = {
 }
 
 export class MyAwesomeClass {
-  constructor(args: MyAwesomeClassArgs) {
+  constructor({ title }: MyAwesomeClassArgs) {
     ...
   }
 }

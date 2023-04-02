@@ -92,7 +92,7 @@ Every file should export only one function. There should not be file like `utils
 
 ## Classes
 
-## Name
+### Name
 
 Every class name is written in PascalCase.
 
